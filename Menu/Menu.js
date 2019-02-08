@@ -11,6 +11,6 @@ let menuButton = document.querySelector('.menu-button');
 
 menuButton.addEventListener('click', (event) => {
   event.stopPropagation();
-  toggleMenu();
-})
+  event.target.toggleMenu();
+});
 
