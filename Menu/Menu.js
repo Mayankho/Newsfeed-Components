@@ -9,8 +9,8 @@ let menu = document.querySelector('.menu');
 let menuButton = document.querySelector('.menu-button');
 // Using your menuButton reference, add a click handler that calls toggleMenu
 
-menuButton.addEventListener('click', (event) => {
-  event.stopPropagation();
-  event.target.toggleMenu();
+menuButton.addEventListener('click', (e) => {
+  e.stopPropagation();
+  toggleMenu();
 });
 
